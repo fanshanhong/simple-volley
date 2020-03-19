@@ -47,6 +47,9 @@ public class RequestQueue {
     }
 
 
+    /**
+     * add的时候还要处理优先级等相关内容。这里没考虑。
+     */
     public void add(Request<?> request) {
         if (!blockingQueue.contains(request)) {
             blockingQueue.add(request);

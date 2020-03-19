@@ -38,15 +38,6 @@ public abstract class Request<T> implements Comparable<Request<T>> {
      */
     private Priority priority;
 
-    /**
-     * 是否已经取消了
-     */
-    boolean isCancel;
-
-    /**
-     * 是否要使用缓存
-     */
-    boolean shouldCache;
 
     /**
      * 请求头
